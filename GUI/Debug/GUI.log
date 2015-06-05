@@ -1,0 +1,48 @@
+﻿La génération a démarré 2015-06-04 21:28:16.
+     1>Projet "C:\Users\Francis\Desktop\FTB\FTB\GUI\GUI.vcxproj" sur le nœud 2 (Build cible(s)).
+     1>CustomBuild:
+         Moc'ing gui.h...
+         Uic'ing gui.ui...
+         Rcc'ing gui.qrc...
+     1>RCC : warning : No resources in 'C:\Users\Francis\Desktop\FTB\FTB\GUI\gui.qrc'.
+         
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\Francis\Desktop\FTB\FTB\\Qt\lib /IC:\Users\Francis\Desktop\FTB\FTB\\Qt\bin /IC:\Users\Francis\Desktop\FTB\FTB\\SFML\bin /IC:\Users\Francis\Desktop\FTB\FTB\\include /IC:\Users\Francis\Desktop\FTB\FTB\\Qt\include\QtWidgets /IC:\Users\Francis\Desktop\FTB\FTB\\Qt\include\QtCore /IC:\Users\Francis\Desktop\FTB\FTB\\Qt\include /I"C:\Users\Francis\Desktop\FTB\FTB\\LIB\id3lib-3.8.3\include" /I"C:\Users\Francis\Desktop\FTB\FTB\\LIB\FMOD Programmers API Windows\api\inc" /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt GeneratedFiles\Debug\moc_gui.cpp GeneratedFiles\qrc_gui.cpp gui.cpp InterfaceLogique.cpp KeyboardButton.cpp KeyboardFacade.cpp main.cpp LoadingDialog.cpp MessageWindow.cpp SFMLCanvas.cpp SFMLWindow.cpp Shortcut.cpp
+         moc_gui.cpp
+         qrc_gui.cpp
+         gui.cpp
+         InterfaceLogique.cpp
+         KeyboardButton.cpp
+         KeyboardFacade.cpp
+         main.cpp
+         LoadingDialog.cpp
+         MessageWindow.cpp
+         SFMLCanvas.cpp
+         SFMLWindow.cpp
+         Shortcut.cpp
+         Génération de code en cours...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /l"0x0409" /nologo /fo"Debug\GUI.res" GUI.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Francis\Desktop\FTB\FTB\Win32\Debug\\Interface.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Qt\Qt5.2.0\5.2.0\msvc2012\lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5Widgetsd.lib "sfml-system-d.lib" "sfml-main-d.lib" fmodex_vc.lib "sfml-graphics-d.lib" "sfml-audio-d.lib" "sfml-network-d.lib" "sfml-window-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Francis\Desktop\FTB\FTB\Win32\Debug\Interface.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Francis\Desktop\FTB\FTB\Win32\Debug\Interface.lib" /MACHINE:X86 /SAFESEH Debug\GUI.res
+         Debug\moc_gui.obj
+         Debug\qrc_gui.obj
+         Debug\gui.obj
+         Debug\InterfaceLogique.obj
+         Debug\KeyboardButton.obj
+         Debug\KeyboardFacade.obj
+         Debug\main.obj
+         Debug\LoadingDialog.obj
+         Debug\MessageWindow.obj
+         Debug\SFMLCanvas.obj
+         Debug\SFMLWindow.obj
+         Debug\Shortcut.obj
+         C:\Users\Francis\Desktop\FTB\FTB\Debug\Media.lib
+         C:\Users\Francis\Desktop\FTB\FTB\Debug\Directory.lib
+     1>Media.lib(MediaSystem.obj) : warning LNK4075: ' /EDITANDCONTINUE' ignoré à cause de la spécification '/SAFESEH'
+         GUI.vcxproj -> C:\Users\Francis\Desktop\FTB\FTB\Win32\Debug\Interface.exe
+     1>Génération du projet "C:\Users\Francis\Desktop\FTB\FTB\GUI\GUI.vcxproj" terminée (Build cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:20.10

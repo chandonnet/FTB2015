@@ -1,0 +1,17 @@
+﻿La génération a démarré 2015-06-04 01:59:17.
+     1>Projet "C:\Users\Francis\Desktop\FTB\FTB\DirectoryTool\DirectoryTool.vcxproj" sur le nœud 2 (Build cible(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt DataDeposit.cpp Playlist.cpp pugixml.cpp
+         DataDeposit.cpp
+         Playlist.cpp
+         pugixml.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Francis\Desktop\FTB\FTB\Release\Directory.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Francis\Desktop\FTB\FTB\Release\Directory.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Francis\Desktop\FTB\FTB\Release\Directory.lib" /MACHINE:X86 /SAFESEH Release\DataDeposit.obj
+         Release\Playlist.obj
+         Release\pugixml.obj
+     1>LINK : fatal error LNK1104: impossible d'ouvrir le fichier 'id3lib.lib'
+     1>Génération du projet "C:\Users\Francis\Desktop\FTB\FTB\DirectoryTool\DirectoryTool.vcxproj" terminée (Build cible(s)) -- ÉCHEC.
+
+ÉCHEC de la build.
+
+Temps écoulé 00:00:02.44

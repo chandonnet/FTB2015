@@ -1,0 +1,1288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1256</width>
+    <height>624</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1256</width>
+    <height>624</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1256</width>
+    <height>624</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Feed The Beat!</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabDirectory">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="movable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="tabQuickPlay">
+       <attribute name="title">
+        <string>Feed me</string>
+       </attribute>
+       <widget class="QFrame" name="frmQuickPlay">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>410</y>
+          <width>761</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QWidget" name="horizontalLayoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>731</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="hBoxQuickPlay">
+          <property name="spacing">
+           <number>50</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="pBtnPlayPause">
+            <property name="text">
+             <string>Jouer/Pause</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSlider" name="volSlider">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QLabel" name="lblVolume">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>10</y>
+           <width>51</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Volume</string>
+         </property>
+        </widget>
+        <widget class="QWidget" name="horizontalLayoutWidget_3">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>50</y>
+           <width>731</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QPushButton" name="pBtnPrev">
+            <property name="text">
+             <string>Précédent</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pBtnNext">
+            <property name="text">
+             <string>Suivant</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSlider" name="timeSlider">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QLabel" name="label_2">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>70</y>
+           <width>31</width>
+           <height>29</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>0:00</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_3">
+         <property name="geometry">
+          <rect>
+           <x>730</x>
+           <y>80</y>
+           <width>41</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>0:00</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frmPlaylist">
+        <property name="geometry">
+         <rect>
+          <x>760</x>
+          <y>10</y>
+          <width>461</width>
+          <height>511</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="lblPlayList">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>0</y>
+           <width>111</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Liste de lecture</string>
+         </property>
+        </widget>
+        <widget class="QTableWidget" name="currentListTable">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>431</width>
+           <height>391</height>
+          </rect>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Sunken</enum>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustIgnored</enum>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="dragEnabled">
+          <bool>true</bool>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::SingleSelection</enum>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <property name="gridStyle">
+          <enum>Qt::SolidLine</enum>
+         </property>
+         <property name="sortingEnabled">
+          <bool>false</bool>
+         </property>
+         <column>
+          <property name="text">
+           <string>Titre</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Album</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Artiste</string>
+          </property>
+         </column>
+        </widget>
+        <widget class="QPushButton" name="btnMonterCurrentList">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>430</y>
+           <width>93</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Monter</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnDescendreCurrentList">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>430</y>
+           <width>93</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Descendre</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnRetirerCurrentList">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>470</y>
+           <width>93</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Retirer</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnViderCurrent">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>470</y>
+           <width>93</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Vider</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pbtnPutNext">
+         <property name="geometry">
+          <rect>
+           <x>340</x>
+           <y>430</y>
+           <width>111</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Monter prochaine</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pbtnShuffle">
+         <property name="geometry">
+          <rect>
+           <x>340</x>
+           <y>470</y>
+           <width>111</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Mélange de fruits</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frmSFML">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>751</width>
+          <height>401</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Bibliothèque</string>
+       </attribute>
+       <widget class="QPushButton" name="btnSupprimerChansonBiblio">
+        <property name="geometry">
+         <rect>
+          <x>1060</x>
+          <y>250</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Supprimer</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnAjouterChansonBiblio">
+        <property name="geometry">
+         <rect>
+          <x>1060</x>
+          <y>210</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Ajouter</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="directoryTable">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>991</width>
+          <height>491</height>
+         </rect>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Sunken</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="sizeAdjustPolicy">
+         <enum>QAbstractScrollArea::AdjustIgnored</enum>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <property name="dragEnabled">
+         <bool>true</bool>
+        </property>
+        <property name="selectionBehavior">
+         <enum>QAbstractItemView::SelectRows</enum>
+        </property>
+        <property name="gridStyle">
+         <enum>Qt::SolidLine</enum>
+        </property>
+        <property name="sortingEnabled">
+         <bool>false</bool>
+        </property>
+        <column>
+         <property name="text">
+          <string>Titre</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Album</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Artiste</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Durée</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QPushButton" name="btnAjouterCurrentBiblio">
+        <property name="geometry">
+         <rect>
+          <x>1060</x>
+          <y>170</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Mettre en attente</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tabCollections">
+       <attribute name="title">
+        <string>Collections</string>
+       </attribute>
+       <widget class="QTabWidget" name="tabCollectionList">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1241</width>
+          <height>521</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <property name="tabsClosable">
+         <bool>false</bool>
+        </property>
+        <property name="movable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string>Collection</string>
+         </attribute>
+         <widget class="QTableWidget" name="affichageCollectionTable">
+          <property name="geometry">
+           <rect>
+            <x>320</x>
+            <y>0</y>
+            <width>901</width>
+            <height>481</height>
+           </rect>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Sunken</enum>
+          </property>
+          <property name="sizeAdjustPolicy">
+           <enum>QAbstractScrollArea::AdjustIgnored</enum>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="dragEnabled">
+           <bool>true</bool>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <property name="gridStyle">
+           <enum>Qt::SolidLine</enum>
+          </property>
+          <property name="sortingEnabled">
+           <bool>false</bool>
+          </property>
+          <column>
+           <property name="text">
+            <string>Titre</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Album</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Artiste</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Durée</string>
+           </property>
+          </column>
+         </widget>
+         <widget class="QTableWidget" name="collectionTable">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>281</width>
+            <height>301</height>
+           </rect>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Sunken</enum>
+          </property>
+          <property name="sizeAdjustPolicy">
+           <enum>QAbstractScrollArea::AdjustIgnored</enum>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="dragEnabled">
+           <bool>true</bool>
+          </property>
+          <property name="selectionMode">
+           <enum>QAbstractItemView::SingleSelection</enum>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <property name="gridStyle">
+           <enum>Qt::SolidLine</enum>
+          </property>
+          <property name="sortingEnabled">
+           <bool>false</bool>
+          </property>
+          <column>
+           <property name="text">
+            <string>Collection</string>
+           </property>
+          </column>
+         </widget>
+         <widget class="QPushButton" name="btnSupprimerCollection">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>420</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Supprimer</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btnAjouterCollection">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>380</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Ajouter</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btnJouerCollection">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>340</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Mettre en attente</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab">
+         <attribute name="title">
+          <string>Créer une collection</string>
+         </attribute>
+         <widget class="QTableWidget" name="createCollectionTable">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>971</width>
+            <height>491</height>
+           </rect>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Sunken</enum>
+          </property>
+          <property name="sizeAdjustPolicy">
+           <enum>QAbstractScrollArea::AdjustIgnored</enum>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="dragEnabled">
+           <bool>true</bool>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <property name="gridStyle">
+           <enum>Qt::SolidLine</enum>
+          </property>
+          <property name="sortingEnabled">
+           <bool>false</bool>
+          </property>
+          <column>
+           <property name="text">
+            <string>Titre</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Album</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Artiste</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Durée</string>
+           </property>
+          </column>
+         </widget>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="geometry">
+           <rect>
+            <x>1020</x>
+            <y>20</y>
+            <width>161</width>
+            <height>161</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>Modifier</string>
+          </property>
+          <widget class="QPushButton" name="btnSupprimerChansonCollection">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>100</y>
+             <width>121</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Supprimer</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btnAjouterChansonCollection">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>30</y>
+             <width>121</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Ajouter</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="geometry">
+           <rect>
+            <x>1020</x>
+            <y>300</y>
+            <width>161</width>
+            <height>161</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>Sauvegarder</string>
+          </property>
+          <widget class="QLineEdit" name="txtName">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>60</y>
+             <width>141</width>
+             <height>22</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btnSauvegarderCollection">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>110</y>
+             <width>121</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Sauvegarder</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lblNom">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>40</y>
+             <width>46</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Nom :</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tabModificator">
+       <attribute name="title">
+        <string>DJs House</string>
+       </attribute>
+       <widget class="QTabWidget" name="tabModif">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1231</width>
+          <height>521</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <property name="movable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="tabVizualizer">
+         <attribute name="title">
+          <string>Vizualizer</string>
+         </attribute>
+         <widget class="QFrame" name="frmSFMLVisualizer">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>981</width>
+            <height>491</height>
+           </rect>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+         </widget>
+         <widget class="QGroupBox" name="gBoxVisualizer">
+          <property name="geometry">
+           <rect>
+            <x>990</x>
+            <y>10</y>
+            <width>221</width>
+            <height>481</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>Options</string>
+          </property>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>20</y>
+             <width>181</width>
+             <height>431</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QLabel" name="lblSampleSize">
+              <property name="text">
+               <string>Nombre de barres :</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="cboxSample">
+              <property name="currentIndex">
+               <number>2</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>64</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>128</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>256</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>512</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="lblSoundBar">
+              <property name="text">
+               <string>Couleur des barres : </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pbtnSoundBars">
+              <property name="text">
+               <string>Selectionner...</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="lblJumpers">
+              <property name="text">
+               <string>Couleur des jumpers : </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pbtnJumpers">
+              <property name="text">
+               <string>Selectionner...</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="lblBackGround">
+              <property name="text">
+               <string>Couleur de fond : </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pbtnBackground">
+              <property name="text">
+               <string>Selectionner...</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tabKeyboard">
+         <attribute name="title">
+          <string>Clavier</string>
+         </attribute>
+         <widget class="QLabel" name="label_4">
+          <property name="geometry">
+           <rect>
+            <x>490</x>
+            <y>390</y>
+            <width>46</width>
+            <height>13</height>
+           </rect>
+          </property>
+          <property name="baseSize">
+           <size>
+            <width>592</width>
+            <height>260</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QWidget" name="horizontalLayoutWidget_4">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>110</y>
+            <width>1201</width>
+            <height>291</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="hboxKeyboard"/>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tabEqualizer">
+         <attribute name="title">
+          <string>Equalizer</string>
+         </attribute>
+         <widget class="QWidget" name="horizontalLayoutWidget_2">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>20</y>
+            <width>1211</width>
+            <height>341</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QGroupBox" name="groupBox_3">
+             <property name="title">
+              <string>Equalizer</string>
+             </property>
+             <widget class="QSlider" name="vSlider_Volume">
+              <property name="geometry">
+               <rect>
+                <x>1110</x>
+                <y>18</y>
+                <width>20</width>
+                <height>311</height>
+               </rect>
+              </property>
+              <property name="value">
+               <number>99</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+             </widget>
+             <widget class="QSlider" name="vSlider_Speed">
+              <property name="geometry">
+               <rect>
+                <x>100</x>
+                <y>20</y>
+                <width>19</width>
+                <height>311</height>
+               </rect>
+              </property>
+              <property name="minimum">
+               <number>22050</number>
+              </property>
+              <property name="maximum">
+               <number>66150</number>
+              </property>
+              <property name="value">
+               <number>44100</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+             </widget>
+             <widget class="QSlider" name="vSlider_Distortion">
+              <property name="geometry">
+               <rect>
+                <x>710</x>
+                <y>20</y>
+                <width>20</width>
+                <height>311</height>
+               </rect>
+              </property>
+              <property name="minimum">
+               <number>0</number>
+              </property>
+              <property name="maximum">
+               <number>80</number>
+              </property>
+              <property name="value">
+               <number>0</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+             </widget>
+             <widget class="QSlider" name="vSlider_Flange">
+              <property name="geometry">
+               <rect>
+                <x>340</x>
+                <y>18</y>
+                <width>20</width>
+                <height>311</height>
+               </rect>
+              </property>
+              <property name="minimum">
+               <number>1</number>
+              </property>
+              <property name="maximum">
+               <number>100</number>
+              </property>
+              <property name="value">
+               <number>1</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+             </widget>
+             <widget class="QSlider" name="vSlider_Echo">
+              <property name="geometry">
+               <rect>
+                <x>220</x>
+                <y>18</y>
+                <width>20</width>
+                <height>311</height>
+               </rect>
+              </property>
+              <property name="maximum">
+               <number>200</number>
+              </property>
+              <property name="value">
+               <number>0</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+             </widget>
+             <widget class="QSlider" name="vSlider_Tremolo">
+              <property name="geometry">
+               <rect>
+                <x>590</x>
+                <y>20</y>
+                <width>20</width>
+                <height>311</height>
+               </rect>
+              </property>
+              <property name="minimum">
+               <number>0</number>
+              </property>
+              <property name="maximum">
+               <number>100</number>
+              </property>
+              <property name="value">
+               <number>0</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+             </widget>
+             <widget class="QSlider" name="vSlider_Pitch">
+              <property name="geometry">
+               <rect>
+                <x>460</x>
+                <y>18</y>
+                <width>20</width>
+                <height>311</height>
+               </rect>
+              </property>
+              <property name="minimum">
+               <number>25</number>
+              </property>
+              <property name="maximum">
+               <number>100</number>
+              </property>
+              <property name="value">
+               <number>50</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QLabel" name="label">
+          <property name="geometry">
+           <rect>
+            <x>1110</x>
+            <y>370</y>
+            <width>51</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Volume</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_5">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>370</y>
+            <width>46</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Vitesse</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_6">
+          <property name="geometry">
+           <rect>
+            <x>220</x>
+            <y>370</y>
+            <width>46</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>  Echo</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_7">
+          <property name="geometry">
+           <rect>
+            <x>460</x>
+            <y>370</y>
+            <width>51</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Hauteur</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_8">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>370</y>
+            <width>46</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Flanger</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pBtnReset">
+          <property name="geometry">
+           <rect>
+            <x>1090</x>
+            <y>430</y>
+            <width>81</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Réinitialiser</string>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_9">
+          <property name="geometry">
+           <rect>
+            <x>590</x>
+            <y>370</y>
+            <width>51</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Tremolo</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_10">
+          <property name="geometry">
+           <rect>
+            <x>710</x>
+            <y>370</y>
+            <width>71</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Distortion</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1256</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>À Propos</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>?</string>
+    </property>
+   </widget>
+   <addaction name="menuMenu"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="gui.qrc"/>
+ </resources>
+ <connections/>
+</ui>

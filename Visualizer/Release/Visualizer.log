@@ -1,0 +1,17 @@
+﻿La génération a démarré 2015-06-04 01:59:16.
+     1>Projet "C:\Users\Francis\Desktop\FTB\FTB\Visualizer\Visualizer.vcxproj" sur le nœud 2 (Build cible(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt MediaSystem.cpp CustomSound.cpp SoundInfo.cpp Visualizer.cpp
+         MediaSystem.cpp
+     1>c:\users\francis\desktop\ftb\ftb\visualizer\MediaSystem.h(2): fatal error C1083: Impossible d'ouvrir le fichier include : 'fmod.hpp' : No such file or directory
+         CustomSound.cpp
+     1>c:\users\francis\desktop\ftb\ftb\visualizer\CustomSound.h(3): fatal error C1083: Impossible d'ouvrir le fichier include : 'fmod.hpp' : No such file or directory
+         SoundInfo.cpp
+     1>SoundInfo.cpp(2): fatal error C1083: Impossible d'ouvrir le fichier include : 'id3\tag.h' : No such file or directory
+         Visualizer.cpp
+     1>c:\users\francis\desktop\ftb\ftb\visualizer\MediaSystem.h(2): fatal error C1083: Impossible d'ouvrir le fichier include : 'fmod.hpp' : No such file or directory
+     1>Génération du projet "C:\Users\Francis\Desktop\FTB\FTB\Visualizer\Visualizer.vcxproj" terminée (Build cible(s)) -- ÉCHEC.
+
+ÉCHEC de la build.
+
+Temps écoulé 00:00:00.77

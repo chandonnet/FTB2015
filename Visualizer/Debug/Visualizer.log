@@ -1,0 +1,20 @@
+﻿La génération a démarré 2015-06-04 21:28:08.
+     1>Projet "C:\Users\Francis\Desktop\FTB\FTB\Visualizer\Visualizer.vcxproj" sur le nœud 2 (Build cible(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Francis\Desktop\FTB\FTB\\LIB\id3lib-3.8.3\include" /I"C:\Users\Francis\Desktop\FTB\FTB\\LIB\FMOD Programmers API Windows\api\inc" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt MediaSystem.cpp CustomSound.cpp SoundInfo.cpp Visualizer.cpp
+         Visualizer.cpp
+         SoundInfo.cpp
+         CustomSound.cpp
+         MediaSystem.cpp
+         Génération de code en cours...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"C:\Users\Francis\Desktop\FTB\FTB\Debug\Media.lib" /NOLOGO Debug\MediaSystem.obj
+         Debug\CustomSound.obj
+         Debug\SoundInfo.obj
+         Debug\Visualizer.obj
+         Visualizer.vcxproj -> C:\Users\Francis\Desktop\FTB\FTB\Debug\Media.lib
+     1>Génération du projet "C:\Users\Francis\Desktop\FTB\FTB\Visualizer\Visualizer.vcxproj" terminée (Build cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:03.37

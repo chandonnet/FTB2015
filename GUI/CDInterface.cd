@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="InterfaceLogique">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAdAmARQogNYRRAAUAI4QBEIABAICBoVU+ABBnBFsAE=</HashCode>
+      <FileName>InterfaceLogique.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KeyboardButton">
+    <Position X="14.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAIBABAAQAAAAAAgAAAAAAAgAAAAIAAEAA=</HashCode>
+      <FileName>KeyboardButton.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KeyboardFacade">
+    <Position X="13.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAABAAAAAABAAAAgEABAQAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>KeyboardFacade.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoadingDialog">
+    <Position X="0.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAABAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LoadingDialog.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MessageWindow">
+    <Position X="0.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAABAAAAAAAAAAAIA=</HashCode>
+      <FileName>MessageWindow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SFMLCanvas">
+    <Position X="5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQAAAAAAAIAAAAABAAAAAAAAAAAAAQEAAgAAAEAAAA=</HashCode>
+      <FileName>SFMLCanvas.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SFMLWindow">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAKAIAACQAAEgAQggAAAAgAAAUAAQAAAgCAAkAAAA=</HashCode>
+      <FileName>SFMLWindow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Shortcut">
+    <Position X="13" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIgBACAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Shortcut.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AWQAAiBOARgIGQawAACAigDIhBEDAIQEgRgBADAgEIg=</HashCode>
+      <FileName>gui.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_mainWindow" Collapsed="true">
+    <Position X="0.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/wAmAGBEAIMgCLKQCThoAIiBQS2MYaAA+LFBAkDFRjU=</HashCode>
+      <FileName>GeneratedFiles\ui_gui.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::mainWindow" Collapsed="true">
+    <Position X="0.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_gui.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="qt_meta_stringdata_GUI_t" Collapsed="true">
+    <Position X="0.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_gui.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
